@@ -15,7 +15,7 @@ export default function ATMMockup() {
   const [pin, setPin] = useState("");
   const [amount, setAmount] = useState("");
 
-  const handlePinInput = (num) => {
+  const handlePinInput = (num: string) => {
     if (pin.length < 4) {
       setPin(pin + num);
     }
@@ -270,7 +270,7 @@ export default function ATMMockup() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-linear-to-br from-gray-800 to-gray-900 flex items-center justify-center p-4 text-black">
       <div className="relative">
         {/* ATM Body */}
         <div
